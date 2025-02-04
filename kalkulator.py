@@ -4,9 +4,13 @@ def main():
 
 while True:
     main()
-    numb1=float(input("Masukkan angka 1 : "))
-    op=input("operasi +,-,*,/: ")
-    numb2=float(input("Masukkan angka 2 : "))
+    try :
+        numb1=float(input("Masukkan angka 1 : "))
+        op=input("operasi +,-,*,/: ")
+        numb2=float(input("Masukkan angka 2 : "))
+    except ValueError:
+        print("masukkan angka dengan benar\n")
+        continue
     if op == "+" :
         print("hasil penjumlahan : ",numb1+numb2,'\n')
     elif op == "-" :
