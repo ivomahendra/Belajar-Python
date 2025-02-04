@@ -1,5 +1,5 @@
 def main():
-    print('======Kalkulator======')
+    print('======Kalkulator======\nctrl + c untuk keluar\n')
     
 
 while True:
