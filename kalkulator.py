@@ -12,12 +12,19 @@ while True:
         print("masukkan angka dengan benar\n")
         continue
     if op == "+" :
-        print("hasil penjumlahan : ",numb1+numb2,'\n')
+        hasil = numb1 + numb2
+        print(f'{numb1} + {numb2} = {hasil}\n')
     elif op == "-" :
-        print("Hasil pengurangan : ",numb1-numb2,'\n')
+        hasil = numb1 - numb2
+        print(f'{numb1} - {numb2} = {hasil}\n')
     elif op == "*" :
-        print("hasil perkalian : ",numb1*numb2,'\n')
+        hasil = numb1 * numb2
+        print(f'{numb1} x {numb2} = {hasil}\n')
     elif op == "/" :
-        print("Hasil pembagian : ",numb1/numb2,'\n')
+        hasil = numb1 / numb2
+        if numb2 == 0:
+            print('pembagian 0 tidak diperbolehkan')
+        else:
+            print(f'{numb1} / {numb2} = {hasil}\n')
     else :
         print("masukkan operasi sesuai format")
